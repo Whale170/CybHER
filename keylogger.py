@@ -7,7 +7,7 @@ class KeyLogger():
     @staticmethod
     def get_char(key):                            
         try:                      #
-            return key.char       # checks if a keystroke typed is a character and prints if its
+            return key.char       # checks if a keystroke typed is a character and prints them
         except AttributeError:    # 
             return str(key)       # if it's was not a valid character, it prints as a string(a sequencec of characters)
 
