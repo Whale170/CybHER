@@ -9,7 +9,7 @@ class KeyLogger():
         try:                      #
             return key.char       # checks if a keystroke typed is a character and prints them
         except AttributeError:    # 
-            return str(key)       # if it's was not a valid character, it prints as a string(a sequencec of characters)
+            return str(key)       # if it's was not a valid character, it prints as a string(a sequence of characters)
 
     def on_press(self, key):
         print(self.get_char(key))                # Prints the keystroke you typed
